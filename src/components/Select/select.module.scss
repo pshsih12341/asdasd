@@ -1,0 +1,113 @@
+.select{
+    width: 320px;
+    position: relative;
+}
+.selectTitle{
+    cursor: pointer;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    color: var(--Text-Primary, var(--Text-Primary, rgba(0, 0, 0, 0.85)));
+    text-overflow: ellipsis;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 116.667% */
+}
+.selectTitle::after{
+    width: 16px;
+    content: url('../../assets/svg/arrow.svg');
+}
+.activeTab{
+    cursor: pointer;
+    transition: 0.5s;
+    top: 0;
+    position: absolute;
+    width: 328px;
+    border-radius: 6px;
+    background:  #FFF;
+    /* shadows/YC Select shadow */
+    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    margin: -12px -8px;
+}
+.activeTabTitle{
+    padding: 12px 8px;
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 116.667% */
+    border-bottom: 1px solid  rgba(0, 0, 0, 0.10);
+}
+.option:hover{
+    transition: 0.5s;
+    background-color: #0000000D;
+}
+.option{
+    padding: 6px 16px;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 138.462% */
+}
+
+.activeTabItems{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid  rgba(0, 0, 0, 0.10);
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px;
+}
+.cancelButton{
+    height: 36px;
+    width: 148px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000D9;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 138.462% */
+    border: none;
+    border-radius: 8px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.cancelButton:hover{
+    background-color: #f1f1f1d9;
+}
+.cancelButton:active {
+    transform: scale(0.95); /* уменьшение размера кнопки при нажатии */
+}
+.acceptButton{
+    height: 36px;
+    width: 148px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#FFFFFF;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 138.462% */
+    background-color: #E02A26;
+    border: none;
+    transition: 0.3s;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.acceptButton:hover{
+    background-color: #e64c49;
+}
+.acceptButton:active {
+    transform: scale(0.95); /* уменьшение размера кнопки при нажатии */
+}

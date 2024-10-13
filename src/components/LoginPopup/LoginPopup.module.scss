@@ -1,0 +1,71 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* затемнение */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .popup {
+    background: #fff;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 700px;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+}
+
+  
+  .popupTitle {
+    color: #000;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px; /* 125% */
+  }
+  
+  .vkLoginBtn {
+    padding: 12px 24px;
+    display: flex;
+    gap: 12px;
+    color: #FFF;
+    /* Header/Display 2 */
+    font-family: "Museo Sans Cyrl";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px; /* 125% */
+    background: #07F;
+    border-radius: 16px;
+    cursor: pointer;
+    align-items: center;
+    border: none;
+    transition: background 0.3s ease, transform 0.2s ease; /* Добавляем анимацию */
+  }
+  
+  .vkLoginBtn::before {
+    content: url('../../assets/svg/vk.svg');
+    width: 41px;
+    height: 35px;
+  }
+  
+  /* Ховер состояние */
+  .vkLoginBtn:hover {
+    background: #0056b3; /* Темнее синий цвет для ховера */
+    transform: translateY(-2px); /* Поднимаем кнопку немного вверх */
+  }
+  
+  /* Активное состояние */
+  .vkLoginBtn:active {
+    background: #003f7f; /* Еще более темный цвет для активного состояния */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Добавляем тень при нажатии */
+  }
+  

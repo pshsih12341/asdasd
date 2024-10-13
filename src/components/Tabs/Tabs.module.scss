@@ -1,0 +1,44 @@
+.tabsContainer {
+    position: relative;
+    display: flex;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 10px 0;
+    height: 44px;
+  }
+  .tab {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #737373;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    transition: color 0.3s ease;
+  }
+  
+  .active {
+    color: white;
+    z-index: 2;
+  }
+  
+  .highlight {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #E02A26;
+    height: 100%;
+    width: calc(100% / 6); /* Для шести вкладок */
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+    z-index: 0;
+  }
+  

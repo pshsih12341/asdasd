@@ -1,0 +1,47 @@
+.page{
+    margin: 40px auto;
+    max-width: 1280px;
+}
+.mainImg{
+    width: 100%;
+}
+.title{
+    color: #000;
+
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px; /* 125% */
+}
+.mainTop{
+    display: flex;
+    justify-content: space-between;
+}
+.breadcrumb{
+    & div{
+        color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 116.667% */
+    }
+    margin-bottom: 40px;
+}
+.breadcrumb div:first-of-type{
+    display: flex;
+    gap: 10px;
+}
+.main{
+    margin:40px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.selects{
+    display: flex;
+    gap: 50px;
+}
+.pagination{
+    justify-content: center;
+}

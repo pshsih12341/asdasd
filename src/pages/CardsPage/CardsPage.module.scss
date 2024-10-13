@@ -1,0 +1,57 @@
+.breadcrumb{
+    & div{
+        color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 116.667% */
+    }
+    margin-bottom: 40px;
+}
+.breadcrumb div:first-of-type{
+    display: flex;
+    gap: 10px;
+}
+.page{
+    margin: 40px auto;
+    max-width: 1280px;
+}
+.pageTop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title{
+    color: #000;
+
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px; /* 125% */
+}
+.selects{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+.pageMain{
+    margin: 40px 80px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.addCard {
+    position: relative;
+    width: 230px;
+    height: 300px;
+    border-radius: 20px;
+    background: #F2F2F2;
+}
+.addCard::before{
+    content: url('../../assets/svg/circle-plus.svg');
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}

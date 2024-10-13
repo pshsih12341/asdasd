@@ -1,0 +1,76 @@
+.feed {
+    margin: 40px 0;
+  }
+
+  .feedContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+
+  .feedItem {
+    width: 280px;
+    height: 350px;
+    border-radius: 25px;
+  }
+
+  .feedItemImg {
+    width: 280px;
+    height: 220px;
+    border-radius: 25px 25px 0 0;
+  }
+  .feedItemBot {
+    padding: 15px 20px;
+    background-color: #f2f2f2;
+    border-radius: 0 0 25px 25px;
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .feedItemP {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    color: #000;
+    text-overflow: ellipsis;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+  }
+  .feedItemDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .feedItemDate {
+    color: #000;
+
+    /* Text/Body 1 */
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 138.462% */
+  }
+  .feedItemTag {
+    padding: 5px 12px;
+    border-radius: 6px;
+    background-color: #ed8482;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 138.462% */
+    color: rgba(0, 0, 0, 0.7);
+    max-width: 120px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .Pagination {
+    justify-content: center;
+  }

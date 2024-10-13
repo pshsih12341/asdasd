@@ -1,0 +1,115 @@
+.hedaer{
+}
+.headerTop{
+    padding: 20px;
+    background-color:#E02A26;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    gap: 20px;
+    img{
+        width: 60px;
+        height: 60px;
+    }
+    p{
+        white-space:pre-line;
+        color: #FFF;
+
+/* Header/Header 2 */
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: 28px; /* 116.667% */
+    }
+}
+.headerTopRight{
+    display: flex;
+    gap: 30px;
+}
+.headerCart{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    img{
+        width: 35px;
+        height: 35px;
+    }
+    p{
+        color: #FFF;
+
+        /* Header/Subheader 2 */
+        font-family: Inter;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px; /* 133.333% */
+    }
+}
+.headerBot{
+    padding: 5px 50px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #F2F2F2;
+}
+.headerNav{
+    flex-shrink: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+.headerNavLink{
+    color: #737373;
+
+    /* Header/Header 1 */
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 120% */
+    white-space:nowrap;
+}
+.borderSpan{
+    height: 20px;
+    width: 2px;
+    border-radius: 30px;
+    background-color: #737373;
+}
+
+.input{
+    width: 15%;
+}
+.active{
+    color: #E02A26;
+}
+.loginBtn {
+    border-radius: 10px;
+    padding: 12px 24px;
+    background: #FFF;
+    color: #E02A26;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 116.667% */
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+  
+    &:hover {
+      background: #B2221F; /* Меняем фон при наведении */
+      color: #FFF; /* Меняем цвет текста при наведении */
+    }
+  
+    &:active {
+      background: #B2221F; /* Темнее для активного состояния */
+      color: #FFF;
+      transform: scale(0.98); /* Легкое уменьшение кнопки при нажатии */
+    }
+  }

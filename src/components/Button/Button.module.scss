@@ -1,0 +1,31 @@
+.acceptBtn{
+    align-self: flex-start;
+    cursor: pointer;
+    display: flex;
+    padding:  12px 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius:10px;
+    border: 1px solid #E02A26;
+    background: #FFF;
+    color: #E02A26;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 141.176% */
+    transition: background 0.3s ease, color 0.3s ease, transform 0.1s;
+}
+
+.acceptBtn:hover {
+    background: #E02A26;
+    color: #FFF;
+}
+
+.acceptBtn:active {
+    transform: scale(0.95);
+    transition: transform 0.1s;
+}
+
+.acceptBtn:focus {
+    outline: none;
+}

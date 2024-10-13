@@ -1,0 +1,88 @@
+.listItem{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.listTitle{
+    color: #000;
+
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 116.667% */
+}
+.listContainer{
+    overflow: auto;
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1; 
+}
+
+.listContainer::-webkit-scrollbar {
+    width: 8px;
+    height: 8px; 
+}
+
+.listContainer::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.listContainer::-webkit-scrollbar-thumb {
+    background-color: #888; 
+    border-radius: 10px; 
+}
+
+.listContainer::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+.listContainer::-webkit-scrollbar-button {
+    display: none;
+}
+.item{
+    width: 280px;
+    height: 350px;
+    border-radius: 25px;
+}
+.itemImg{
+    width: 280px;
+    height: 220px;
+    border-radius: 25px 25px 0 0;
+}
+.itemBot{
+    background: #F2F2F2;
+    border-radius: 0 0 25px 25px;
+    padding: 10px 20px;
+    height: 126px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.itemText{
+    overflow: hidden;
+    color: #000;
+    text-overflow: ellipsis;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 141.176% */
+}
+.prices{
+    display: flex;
+    justify-content: space-between;
+}
+.itemPointsPrice{
+    padding: 5px 12px;
+    border-radius: 6px;
+    background:  linear-gradient(163deg, rgba(255, 255, 255, 0.10) 16.5%, rgba(255, 255, 255, 0.35) 48.73%, rgba(255, 255, 255, 0.08) 80.97%), #CC8F38;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.itemPrice{
+    cursor: pointer;
+    padding: 5px 12px;
+    border-radius: 6px;
+    background-color: #E02A26;
+    color: #FFFFFF;
+}
