@@ -14,7 +14,7 @@ const HomePage = () => {
   const lastMatch = useAppSelector((store) => store?.matches?.data?.games[0]);
 
   useEffect(() => {
-    dispatch(loadMatches());
+    dispatch(loadMatches({season:'2024/2025'}));
   },[dispatch])
 
   return (

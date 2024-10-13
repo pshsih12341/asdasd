@@ -2,7 +2,6 @@ import React from 'react';
 
 import styles from './TeamPage.module.scss';
 import { Pagination } from '@gravity-ui/uikit';
-import { useNavigate } from 'react-router-dom';
 import Select from '@/components/Select/select';
 import teamPhoto from '@/assets/svg/TeamPhoto.png';
 import { useAppSelector } from '@/services/store';
@@ -10,8 +9,6 @@ import PlayerItem from '@/components/PlayerItem/PlayerItem';
 
 const TeamPage: React.FC = () => {
   const players = useAppSelector((s) => s.players.data);
-
-  const navigate = useNavigate();
 
   const dataSelectOne = [
     'Все игроки',
